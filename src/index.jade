@@ -1,0 +1,70 @@
+extends _layouts/base
+
+include _modules/link/link
+
+block content
+  #content
+    #main
+      .posts-holder
+        h2 Recent Posts
+        .post
+          .meta
+            a(href='#') Project Management
+            small Jun 5, 2008
+          h2
+            a(href='#') Sony launches Morgans Facebook App
+          .just-text.post-body
+            p
+              | When it was announced a while back that Zend was going to include 
+              a(href='#') AMF (Action Message Format)
+              |  functionality supported by Adobe, I was excited to hear that there would be an "official" way to use AMF with PHP, as I had used AMFPHP, an unsupported implementation, with mixed success. I experimented with Zend AMF a little when it was released, and there were two things that annoyed me about this implementation as compared with 
+              a(href='#') AMFPHP
+              | , but I revisited it this week and discovered remedies for both issues.
+          a.link-comm(href='#') 8 Comments
+          a.link-more(href='#') More
+        // .post
+
+        .post
+          .meta
+            a(href='#') Desing
+            small May 5, 2008
+          h2
+            a(href='#') Making the A-List
+          .just-text.post-body
+            p
+              | As many Think readers already know, Big Spaceship was one of the founding agencies in a non-profit association called the 
+              a(href='#') Society of Digital Agencies (SoDA
+              | ).  SoDA brings together a range of amazing digital agencies (41, at current count) from around the world, all of whom share a common desire to advance the field of digital marketing. This year, that shared desire led to the publication of 
+              a(href='#') The SoDA 2010 Digital Marketing Outlook
+              | , a fantastic collection of articles and thought pieces from SoDA members.
+          a.link-comm(href='#') 8 Comments
+          a.link-more(href='#') More
+        // .post
+      // /posts-holder
+    // #main
+    #side-col
+      .side-div
+        //- h2 Newsletter
+        //- .just-text
+        //-   p
+        //-     img(src='images/sample11.jpg', width='280', height='110')
+        //-   p.notice Get our Newsletter!
+        //- form(method='post')
+        //-   input(id='', name='', type='text', value='Enter your e-mail address', style='width:190px')
+        //-   input.btn-form(type='button', value='Sign Up »')
+          
+        .just-text
+          h2 Follow me
+          .follow.just-text
+            ul#social
+              li
+                a#twitter(href='#') on Twitter
+              li
+                a#facebook(href='#') on Facebook
+              li
+                a#linkedin(href='#') on Linkedin
+              li
+                a#vimeo(href='#') on Vimeo
+              li
+                a#youtube(href='#') on YouTube
+    // #side-col

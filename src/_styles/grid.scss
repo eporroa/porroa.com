@@ -1,0 +1,52 @@
+.wrapper{
+    @include make-container;
+}
+    #header, #content, #footer{
+        @include make-container-max-widths;
+        @include make-row;
+        margin: 0 auto;
+    }
+  
+    #logo, #main-nav, #main, #side-col {
+      @include make-col-ready();
+    }
+
+    #logo {
+      @include media-breakpoint-up(lg) {
+        @include make-col(3);
+      }
+    }
+
+    #main-nav{
+        @include media-breakpoint-up(lg) {
+            @include make-col(9);
+        }
+    }
+
+    #content {
+        flex-direction: row-reverse;
+    }
+
+        #main{
+            @include media-breakpoint-up(lg) {
+                @include make-col(8);
+            }
+        }
+        #side-col{
+            @include media-breakpoint-up(lg) {
+                @include make-col(4);
+            }
+        }
+
+    #footer-info{
+        @include make-row();
+        width: 1000%;
+        
+        .contact-info,
+        .social-networks-follow{
+            @include make-col-ready();
+            @include media-breakpoint-up(lg) {
+                @include make-col(3);
+            }
+        }
+	}
