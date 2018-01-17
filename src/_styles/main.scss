@@ -1,6 +1,31 @@
+
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
 @import 'node_modules/bootstrap/scss/bootstrap-grid';
+
+$color_1: #d9d9d9;
+$color_2: #646263;
+$color_3: #ccc;
+$color_4: #f9f9f9;
+$color_6: #faf5f8;
+$color_7: #3f3d3e;
+$color_8: #696768;
+$color_9: #939393;
+$color_11: #808080;
+$color_12: #383838;
+$color_13: #fefefe;
+$color_14: #323132;
+$color_15: #707070;
+$color_16: #ada9ab;
+$color_17: $blue;
+$footer_normal: #646263;
+$footer_title: #252525;
+
+$footer_bg: #FFF;
+$background_color_1: #e7214a;
+
+$font_family_1: "Helvetica Neue", Helvetica, sans-serif;
+$font_family_2: "Lucida Sans", Helvetica, sans-serif;
 
 // Import Site Styles
 @import 'grid';

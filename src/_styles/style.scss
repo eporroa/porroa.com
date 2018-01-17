@@ -1,27 +1,3 @@
-$color_1: #d9d9d9;
-$color_2: #646263;
-$color_3: #ccc;
-$color_4: #f9f9f9;
-$color_5: $red;
-$color_6: #faf5f8;
-$color_7: #3f3d3e;
-$color_8: #696768;
-$color_9: #939393;
-$color_11: #808080;
-$color_12: #383838;
-$color_13: #fefefe;
-$color_14: #323132;
-$color_15: #707070;
-$color_16: #ada9ab;
-$color_17: $blue;
-$footer_normal: #646263;
-$footer_title: #252525;
-
-$footer_bg: #FFF;
-$background_color_1: #e7214a;
-
-$font_family_1: "Helvetica Neue", Helvetica, sans-serif;
-$font_family_2: "Lucida Sans", Helvetica, sans-serif;
 
 body {
 	background: $white;
@@ -39,7 +15,7 @@ a.light {
 	color: $color_4;
 	text-decoration: none;
 	&:hover {
-		color: $color_5;
+		color: $red;
 	}
 }
 h1 {
@@ -48,23 +24,17 @@ h1 {
 	padding-bottom: 13px;
 	color: $color_6;
 	span {
-		color: $color_5;
+		color: $red;
 		font-size: 0.511em;
 		display: block;
 	}
 	strong {
-		color: $color_5;
+		color: $red;
 	}
 }
 h2 {
 	font-size: 1.333em;
 	text-transform: uppercase;
-}
-small {
-	color: $color_7;
-	text-transform: uppercase;
-	padding: 0 0 15px 0;
-	display: block;
 }
 input {
 	background: #bbb7b9;
@@ -100,28 +70,48 @@ select {
 	background-color: $black;
 }
 
-#header {
-	padding-top: 4em;
-	a {
-		text-decoration: none;
-	}
+#header a {
+	text-decoration: none;
 }
-	#logo h1{
-		text-transform: uppercase;
-		font:2em bold $font_family_2;
-		margin: 0;
+	#logo {
+		color: $gray-600;
+		h1{
+			text-transform: uppercase;
+			font:2em $font_family_2;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+			line-height: 80%;
+
+			a{
+				background: linear-gradient($gray-700, $gray-600);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			small{
+				font-size: .9em;
+			}
+		}
 	}
 	#main-nav {
 		text-transform: uppercase;
 		font-family: $font_family_2;
-		font-size: 1.583em;
-		
+		font-size: 1.2em;
+		list-style: none;
+		margin: 0;
+
 		li {
-			float: left;
-			margin: 0 27px 0 0;
+			display: inline-block;
+			margin-right: 27px;
+			position: relative;
+    		bottom: -3px;
 		}
 		a {
 			color: $color_9;
+			&:hover{
+				color: $gray-400;
+			}
 		}
 	}
 
@@ -130,11 +120,11 @@ select {
 		text-decoration: none;
 		color: $color_11;
 		&:hover {
-			color: $color_5;
+			color: $red;
 		}
 	}
 	a.current {
-		color: $color_5;
+		color: $red;
 	}
 	li {
 		background: url(../images/dots.gif) bottom left repeat-x;
@@ -181,7 +171,7 @@ select {
 }
 .side-nav-title {
 	font-size: 1.5em;
-	color: $color_5;
+	color: $red;
 	background: url(../images/arrow.gif) bottom left no-repeat;
 	padding-bottom: 30px;
 	text-transform: uppercase;
@@ -216,7 +206,7 @@ select {
 		border: 1px solid #222221;
 	}
 	h2 {
-		color: $color_5;
+		color: $red;
 		font-size: 1.333em;
 		padding: 15px 0 2px 0;
 		span {
@@ -299,25 +289,32 @@ select {
 	}
 }
 
+.posts-holder{
+	padding-top: 10px;
+}
+
 .post {
 	border-bottom: 1px solid #1a1a1a;
 	margin: 35px 0;
-	padding-bottom: 10px;
+	padding-bottom: 5em;
+
 	h2 {
-		font-size: 4em;
+		font-size: 3.4em;
+		line-height: 110%;
 		color: $color_13;
+		margin: .4em 0;
 	}
 	a {
 		color: $color_13;
 		text-decoration: none;
 		&:hover {
-			color: $color_5;
+			color: $red;
 		}
 	}
 	.meta {
 		a {
 			font-size: 1.333em;
-			color: $color_5;
+			color: $red;
 			text-decoration: none;
 			&:hover {
 				text-decoration: underline;
@@ -351,7 +348,6 @@ select {
 }
 .follow {
 	margin-top: 15px;
-	width: 235px;
 }
 #social {
 	margin: 0;
@@ -361,33 +357,31 @@ select {
 	li {
 		list-style-type: none;
 		padding: 8px 8px 8px 0;
-	}
-	a {
-		color: $color_14;
-		font-size: 0.917em;
-		padding-left: 20px;
-		&:hover {
-			color: $color_3;
-			text-decoration: none;
+		&:nth-child(1) a:hover{
+			color: $cyan;
+		}
+		&:nth-child(2) a:hover{
+			color: $blue;
+		}
+		&:nth-child(3) a:hover{
+			color: $green;
+		}
+		&:nth-child(4) a:hover{
+			color: $red;
+		}
+		&:nth-child(5) a:hover{
+			color: $white;
 		}
 	}
-	#twitter {
-		background: url(../images/twitter.png) no-repeat;
-	}
-	#flickr {
-		background: url(../images/flickr.png) no-repeat;
-	}
-	#vimeo {
-		background: url(../images/vimeo.png) no-repeat;
-	}
-	#facebook {
-		background: url(../images/facebook.png) no-repeat;
-	}
-	#linkedin {
-		background: url(../images/linkedin.png) no-repeat;
-	}
-	#youtube {
-		background: url(../images/youtube.png) no-repeat;
+	a {
+		color: $gray-600;
+		font-size: 0.917em;
+		span{
+			display: inline-block;
+			position: relative;
+			margin-right: .4em;
+			top:2px;
+		}
 	}
 }
 .just-text {
@@ -397,7 +391,7 @@ select {
 		color: $color_15;
 	}
 	a {
-		color: $color_5;
+		color: $red;
 		text-decoration: none;
 		&:hover {
 			text-decoration: underline;

@@ -6,6 +6,23 @@
         @include make-row;
         margin: 0 auto;
     }
+
+    #header {
+        align-items: flex-end;
+
+        @include media-breakpoint-down(md) {
+            padding: 2.5em 0 0;
+            background-color: $color_14;
+
+            #main-nav{
+                margin: 2em 0;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 2.5em 0;
+        }
+    }
   
     #logo, #main-nav, #main, #side-col {
       @include make-col-ready();
@@ -29,18 +46,18 @@
 
         #main{
             @include media-breakpoint-up(lg) {
-                @include make-col(8);
+                @include make-col(9);
             }
         }
         #side-col{
             @include media-breakpoint-up(lg) {
-                @include make-col(4);
+                @include make-col(3);
             }
         }
 
     #footer-info{
         @include make-row();
-        width: 1000%;
+        width: 100%;
         
         .contact-info,
         .social-networks-follow{
