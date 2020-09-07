@@ -2,5 +2,6 @@ node_modules
 *.log
 build
 tmp
+.cache
 .grunt
 .DS_Store
