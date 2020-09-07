@@ -1,0 +1,21 @@
+// Normalize Styles
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/grid";
+
+
+// Import Site Styles
+@import "./variables.scss";
+@import "./grid.scss";
+@import "./style.scss";
+@import "./footer.scss";
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
