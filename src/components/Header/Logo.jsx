@@ -26,7 +26,6 @@ const Container = styled.div`
     font-size: 0.8em;
     color: var(--logo-color-0);
     display: block;
-    text-align: center;
   }
 `;
 
