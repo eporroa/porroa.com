@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="contact-info">
             <p>
               <strong>Contact</strong>
-              <span className="label">mail: </span>erik[@]porroa.com
+              <span className="label">linkedin: </span><a href="https://www.linkedin.com/in/eporroa/">Send me a message!</a>
               <br />
-              <span className="label">skype: </span>eporroa
+              <span className="label">skype: </span><a href="https://join.skype.com/invite/rhzEro96c1hN">eporroa</a>
             </p>
           </div>
           <div className="social-networks-follow">
