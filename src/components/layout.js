@@ -13,7 +13,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import BrowseHappy from "./browserhappy";
 
-import "normalize.css";
+// import "normalize.css";
 import "../assets/fonts/style.css"
 import "../scss/main.scss";
 

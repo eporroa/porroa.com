@@ -5,3 +5,4 @@ tmp
 .cache
 .grunt
 .DS_Store
+public/
